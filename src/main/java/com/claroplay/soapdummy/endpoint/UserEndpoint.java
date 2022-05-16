@@ -1,5 +1,7 @@
 package com.claroplay.soapdummy.endpoint;
 
+import java.util.Properties;
+
 import com.claroplay.soapdummy.samples.GetUserRequest;
 import com.claroplay.soapdummy.samples.GetUserResponse;
 import com.claroplay.soapdummy.service.UserService;
@@ -14,9 +16,10 @@ public class UserEndpoint {
 
     @Autowired
     private UserService userService;
+	Properties prop = new Properties();
 
 
-    @PayloadRoot(namespace = "http://service.imiclaro.com/mocks",
+    @PayloadRoot(namespace = "http://prd.imiclaro.com/mocks",
             localPart = "getUserRequest")
     @ResponsePayload
     public GetUserResponse getUserRequest(@RequestPayload GetUserRequest request) {

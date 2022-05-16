@@ -5,5 +5,5 @@
 // Generated on: 2018.03.03 at 05:09:04 PM IST 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://service.imiclaro.com/mocks", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
+@javax.xml.bind.annotation.XmlSchema(namespace = "http://prd.imiclaro.com/mocks", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
 package com.claroplay.soapdummy.samples;
